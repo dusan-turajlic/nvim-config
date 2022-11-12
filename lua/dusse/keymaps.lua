@@ -26,12 +26,16 @@ keymap("n", "<M-Up>", "<C-w>k", opts) -- up
 keymap("n", "<M-Right>", "<C-w>l", opts) -- right
 
 keymap("n", "<leader>e", ":Lex 25<cr>", opts)
+keymap("n", "<D-s>", ":w", opts)
 
 -- Resize with arrows
 keymap("n", "<S-k>", ":resize +2<CR>", opts)
 keymap("n", "<S-j>", ":resize -2<CR>", opts)
 keymap("n", "<S-h>", ":vertical resize -2<CR>", opts)
 keymap("n", "<S-l>", ":vertical resize +2<CR>", opts)
+
+-- Insert
+keymap("i", "<D-s>", ":w", opts)
 
 -- Navigate buffers
 keymap("n", "<S-q>", ":bnext<CR>", opts)
