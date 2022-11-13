@@ -47,7 +47,7 @@ return packer.startup(function(use)
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "numToStr/Comment.nvim" -- Easily comment stuff
   use 'kyazdani42/nvim-web-devicons' -- Web icons for nvim tree
-  use 'kyazdani42/nvim-tree.lua' -- nvim-tree 
+  use 'kyazdani42/nvim-tree.lua' -- nvim-tree
   use "akinsho/bufferline.nvim"
   use "moll/vim-bbye"
 
@@ -67,7 +67,7 @@ return packer.startup(function(use)
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
-	-- LSP
+  -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/mason.nvim" -- simple to use language server installer
   use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
@@ -93,4 +93,3 @@ return packer.startup(function(use)
     require("packer").sync()
   end
 end)
-

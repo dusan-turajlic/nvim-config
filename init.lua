@@ -11,4 +11,3 @@ require "dusse.comment"
 require "dusse.gitsigns"
 require "dusse.nvim-tree"
 require "dusse.bufferline"
-

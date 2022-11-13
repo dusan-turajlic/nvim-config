@@ -7,4 +7,3 @@ end
 require "dusse.lsp.mason"
 require("dusse.lsp.handlers").setup()
 require "dusse.lsp.null-ls"
-
