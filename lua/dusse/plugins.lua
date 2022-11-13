@@ -50,6 +50,7 @@ return packer.startup(function(use)
   use 'kyazdani42/nvim-tree.lua' -- nvim-tree
   use "akinsho/bufferline.nvim"
   use "moll/vim-bbye"
+  use "akinsho/toggleterm.nvim"
 
   -- Color scheme
   use "Mofiqul/dracula.nvim"

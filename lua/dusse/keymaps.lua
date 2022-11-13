@@ -26,7 +26,7 @@ keymap("n", "<M-Up>", "<C-w>k", opts) -- up
 keymap("n", "<M-Right>", "<C-w>l", opts) -- right
 
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
-keymap("n", "<leader>f", "<cmd>lua vim.lsp.buf.formatting_sync()<cr>", opts)
+keymap("n", "<leader>f", "<cmd>lua vim.lsp.buf.format()<cr>", opts)
 keymap("n", "<D-s>", ":w<cr>", opts)
 
 -- Resize with arrows
@@ -43,7 +43,8 @@ keymap("n", "<S-w>", ":bnext<CR>", opts)
 keymap("n", "<S-q>", ":bprevious<CR>", opts)
 
 -- Qucik find files
-keymap("n", "<C-p>", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown())<cr>", opts)
+keymap("n", "<C-p>", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown())<cr>",
+  opts)
 keymap("n", "<C-F>", "<cmd>Telescope live_grep<cr>", opts)
 
 -- Gitsigns
@@ -72,5 +73,3 @@ keymap("t", "<M-Left>", "<C-\\><C-N><C-w>h", term_opts)
 keymap("t", "<M-Down>", "<C-\\><C-N><C-w>j", term_opts)
 keymap("t", "<M-Up>", "<C-\\><C-N><C-w>k", term_opts)
 keymap("t", "<M-Right>", "<C-\\><C-N><C-w>l", term_opts)
-
-
