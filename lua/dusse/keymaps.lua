@@ -41,6 +41,13 @@ keymap("i", "<D-s>", ":w", opts)
 keymap("n", "<S-q>", ":bnext<CR>", opts)
 keymap("n", "<S-w>", ":bprevious<CR>", opts)
 
+-- Qucik find files
+keymap("n", "<C-p>", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown())<cr>", opts)
+keymap("n", "<C-F>", "<cmd>Telescope live_grep<cr>", opts)
+
+-- Gitsigns
+keymap("n", "<C-b>", "<cmd>Gitsigns blame_line<cr>", opts)
+
 -- Visual --
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
@@ -65,7 +72,4 @@ keymap("t", "<M-Down>", "<C-\\><C-N><C-w>j", term_opts)
 keymap("t", "<M-Up>", "<C-\\><C-N><C-w>k", term_opts)
 keymap("t", "<M-Right>", "<C-\\><C-N><C-w>l", term_opts)
 
--- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
-keymap("n", "<C-p>", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown())<cr>", opts)
-keymap("n", "<C-F>", "<cmd>Telescope live_grep<cr>", opts)
 

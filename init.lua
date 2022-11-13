@@ -8,4 +8,5 @@ require "dusse.telescope"
 require "dusse.treesitter"
 require "dusse.autopairs"
 require "dusse.comment"
+require "dusse.gitsigns"
 
