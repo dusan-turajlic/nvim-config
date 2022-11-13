@@ -52,9 +52,6 @@ return packer.startup(function(use)
   use "moll/vim-bbye"
   use "akinsho/toggleterm.nvim"
 
-  -- Color scheme
-  use "Mofiqul/dracula.nvim"
-
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
@@ -104,6 +101,10 @@ return packer.startup(function(use)
   -- Is using a standard Neovim install, i.e. built from source or using a
   -- provided appimage.
   use 'lewis6991/impatient.nvim'
+
+  -- Color scheme
+  -- use "Mofiqul/dracula.nvim"
+  use "EdenEast/nightfox.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
