@@ -9,4 +9,5 @@ require "dusse.treesitter"
 require "dusse.autopairs"
 require "dusse.comment"
 require "dusse.gitsigns"
+require "dusse.nvim-tree"
 

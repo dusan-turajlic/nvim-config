@@ -25,7 +25,7 @@ keymap("n", "<M-Down>", "<C-w>j", opts) -- down
 keymap("n", "<M-Up>", "<C-w>k", opts) -- up
 keymap("n", "<M-Right>", "<C-w>l", opts) -- right
 
-keymap("n", "<leader>e", ":Lex 25<cr>", opts)
+keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 keymap("n", "<D-s>", ":w", opts)
 
 -- Resize with arrows
