@@ -65,6 +65,8 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-nvim-lua"
 
   use "lukas-reineke/indent-blankline.nvim"
+  use 'goolord/alpha-nvim'
+  use "antoinemadec/FixCursorHold.nvim"
 
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
