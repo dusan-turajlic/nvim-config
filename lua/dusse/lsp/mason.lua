@@ -2,6 +2,8 @@ local servers = {
   "sumneko_lua",
   "pyright",
   "jsonls",
+  "tsserver",
+  "bashls", 
 }
 
 local settings = {
