@@ -64,6 +64,8 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-nvim-lua"
 
+  use "lukas-reineke/indent-blankline.nvim"
+
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
@@ -93,6 +95,13 @@ return packer.startup(function(use)
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
+
+  -- Project
+  use "ahmedkhalf/project.nvim"
+
+  -- Is using a standard Neovim install, i.e. built from source or using a
+  -- provided appimage.
+  use 'lewis6991/impatient.nvim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
