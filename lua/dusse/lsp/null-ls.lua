@@ -1,5 +1,6 @@
 local null_ls_status_ok, null_ls = pcall(require, "null-ls")
 if not null_ls_status_ok then
+  vim.notify("On no it happend again null-ls is dead")
   return
 end
 
@@ -11,7 +12,7 @@ local formatting = null_ls.builtins.formatting
 null_ls.setup({
   debug = false,
   sources = {
-    formatting.prettier,
+    formatting.eslint_d,
     formatting.stylua,
     -- formatting.black.with({ extra_args = { "--fast" } }),
     -- diagnostics.flake8,

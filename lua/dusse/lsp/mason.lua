@@ -2,8 +2,9 @@ local servers = {
   "sumneko_lua",
   "pyright",
   "jsonls",
+  "eslint",
   "tsserver",
-  "bashls", 
+  "bashls",
 }
 
 local settings = {

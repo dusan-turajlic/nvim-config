@@ -60,6 +60,7 @@ return packer.startup(function(use)
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-nvim-lua"
+  use "jose-elias-alvarez/null-ls.nvim"
 
   use "lukas-reineke/indent-blankline.nvim"
   use 'goolord/alpha-nvim'
@@ -105,6 +106,9 @@ return packer.startup(function(use)
   -- Color scheme
   -- use "Mofiqul/dracula.nvim"
   use "EdenEast/nightfox.nvim"
+
+  -- Vim cool
+  use "romainl/vim-cool"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

@@ -25,8 +25,9 @@ keymap("n", "<M-Down>", "<C-w>j", opts) -- down
 keymap("n", "<M-Up>", "<C-w>k", opts) -- up
 keymap("n", "<M-Right>", "<C-w>l", opts) -- right
 
-keymap("n", "<S-Z>", ":NvimTreeToggle<cr>", opts)
+keymap("n", ">", ":NvimTreeToggle<cr>", opts)
 keymap("n", "<leader>f", "<cmd>lua vim.lsp.buf.format()<cr>", opts)
+keymap("n", "<leader>q", "<cmd>enew<bar>bd #<cr>", opts)
 keymap("n", "<D-s>", ":w<cr>", opts)
 
 -- Resize with arrows
@@ -41,6 +42,9 @@ keymap("i", "<D-s>", ":w<cr>", opts)
 -- Navigate buffers
 keymap("n", "<S-w>", ":bnext<CR>", opts)
 keymap("n", "<S-q>", ":bprevious<CR>", opts)
+-- Navigate to and from
+keymap("n", "<C-q>", "<C-o>", opts)
+keymap("n", "<C-w>", "<C-i>", opts)
 
 -- Qucik find files
 keymap("n", "<C-p>", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown())<cr>",
