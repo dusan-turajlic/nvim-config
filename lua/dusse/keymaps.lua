@@ -26,9 +26,10 @@ keymap("n", "<M-Up>", "<C-w>k", opts) -- up
 keymap("n", "<M-Right>", "<C-w>l", opts) -- right
 
 keymap("n", ">", ":NvimTreeToggle<cr>", opts)
+keymap("n", "<leader>i", "<cmd>lua vim.lsp.buf.hover()<cr>", opts)
+keymap("n", "<leader>a", "<cmd>lua vim.lsp.buf.code_action()<cr>", opts)
 keymap("n", "<leader>f", "<cmd>lua vim.lsp.buf.format()<cr>", opts)
-keymap("n", "<leader>q", "<cmd>enew<bar>bd #<cr>", opts)
-keymap("n", "<D-s>", ":w<cr>", opts)
+keymap("n", "<C-s>", ":w<cr>", opts)
 
 -- Resize with arrows
 keymap("n", "<S-k>", ":resize +2<CR>", opts)
@@ -37,7 +38,7 @@ keymap("n", "<S-h>", ":vertical resize -2<CR>", opts)
 keymap("n", "<S-l>", ":vertical resize +2<CR>", opts)
 
 -- Insert
-keymap("i", "<D-s>", ":w<cr>", opts)
+keymap("i", "<C-s>", ":w<cr>", opts)
 
 -- Navigate buffers
 keymap("n", "<S-w>", ":bnext<CR>", opts)
@@ -49,7 +50,14 @@ keymap("n", "<C-w>", "<C-i>", opts)
 -- Qucik find files
 keymap("n", "<C-p>", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown())<cr>",
   opts)
-keymap("n", "<C-F>", "<cmd>Telescope live_grep<cr>", opts)
+keymap("n", "<leader>F", "<cmd>Telescope live_grep<cr>", opts)
+
+-- Testing
+keymap("n", "<leader>t", "<cmd>lua require('neotest').run.run()<cr>", opts)
+keymap("n", "<leader>T", "<cmd>lua require('neotest').run.run(vim.fn.expand('%'))<cr>", opts)
+keymap("n", "<leader>h", "<cmd>lua require('neotest').run.attach()<cr>", opts)
+-- keymap("n", "<leader>l", ":TestLast -strategy=toggleterm<cr>", opts)
+-- keymap("n", "<leader>g", ":TestVisit<cr>", opts)
 
 -- Gitsigns
 keymap("n", "<C-b>", "<cmd>Gitsigns blame_line<cr>", opts)
