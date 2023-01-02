@@ -114,12 +114,6 @@ return packer.startup(function(use)
   use "tpope/vim-surround"
   use "tpope/vim-repeat"
 
-  use "nvim-neotest/neotest-plenary"
-  use "nvim-neotest/neotest-python"
-  use "haydenmeade/neotest-jest"
-  use "marilari88/neotest-vitest"
-  use "nvim-neotest/neotest"
-
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
